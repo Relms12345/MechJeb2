@@ -58,9 +58,10 @@ namespace MuMech
 
                 //print("Warppause : lastAskedIndex=" + lastAskedIndex + " CurrentRateIndex=" + TimeWarp.CurrentRateIndex + " WarpMode=" + TimeWarp.WarpMode + " MaxCurrentRate=" + TimeWarp.fetch.GetMaxRateForAltitude(vessel.altitude, vessel.mainBody));
                 WarpPaused = false;
-                //PauseWarp();
-
-                //ScreenMessages.PostScreenMessage("MJ : Warp canceled by user or an other mod");
+                lastAskedIndex = TimeWarp.CurrentRateIndex;
+                warpToUT = 0;
+                Core.Node.Autowarp = false;
+                ScreenMessages.PostScreenMessage("MJ : Warp canceled by user or an other mod");
             }
         }
 

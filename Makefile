@@ -11,7 +11,7 @@ else
 		ifndef KSPDIR
 			KSPDIR := ${XDG_DATA_HOME}/Steam/SteamApps/common/Kerbal Space Program
 		endif
-		MANAGED := ${KSPDIR}/KSP_Data/Managed/
+		MANAGED := ${KSPDIR}/KSP_x64_Data/Managed/
 	endif
 	ifeq ($(UNAME_S),Darwin)
 		ifndef KSPDIR
